@@ -18,7 +18,7 @@ class PizzaStoreActivity : BaseActivity() {
         setContentView(R.layout.activity_pizza_store)
         setupEvents()
         setValues()
-        setTitle("피자가게 상세정보다 이생키야")
+        setTitle("피자가게 상세정보다")
     }
 
     override fun setupEvents() {
@@ -57,5 +57,11 @@ class PizzaStoreActivity : BaseActivity() {
         pizzaStoreTxtName.text = name
         pizzaStoreTxtPhone.text = phone
 
+        /*
+        storeData = intent.getSerializableExtra("name") as PizzaStroeDate
+        Glide.with(mContext).load(storeData?.logoUrl).into(logoimg)
+        storeNameTxt.text = storeData?.name
+        storePhoneTxt.text = storeData?.phoneNum
+        * */
     }
 }
